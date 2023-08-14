@@ -1,0 +1,800 @@
+body{
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.whatsapp-link {
+
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 70px;
+    right: 25px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+#image1{
+    height: 500px;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.up{
+    background-color: #001e69;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+
+   
+}
+
+
+.ct img{
+    width: 20px;
+    display: inline;
+    margin-top: 1.5%;
+   
+}
+
+.ct p{
+    display: inline;
+    padding: 25px;
+    
+  
+}
+
+
+.ct{
+    color: rgb(255, 255, 255);
+    display: inline;
+    float: right;
+    
+}
+
+
+.ct a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: inline;
+   
+}
+
+#one{
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+
+#two{
+    margin-left: 10px;
+    
+}
+
+#lg img{
+    width: 2.5%;
+    left: 20%;
+    float: left;
+    position: absolute;
+    top: 6%;
+}
+
+
+.about{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    top: 40px;
+    height: 40px;
+    font: normal bold 6px / 10px "Roboto", Helvetica, Arial, Verdana, sans-serif;
+         
+}
+
+.aa {
+    float: right;
+    margin-right: 18%;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    padding: 10px;
+   
+     
+        
+}
+
+.aa a{
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 11pt;
+    margin-right: 20px;
+
+}
+
+
+.aa a:hover{
+    color: rgb(0, 72, 228);
+    transition: .4s;
+    
+}
+
+
+.about #sobrenos{
+    color: rgb(0, 72, 228);
+}
+
+
+
+.pqct img{
+    background-image: linear-gradient(to right, rgba(64, 135, 216, 0), rgb(37, 126, 222) );
+    width: 30%;
+    height: 250px;
+    top: 125%;
+    position: absolute;
+    right: 14%;
+}
+
+.pqct{
+    background-image: linear-gradient(to right, rgb(33, 123, 226), rgb(37, 126, 222) );
+    width: 100%;
+
+    margin-top: 8%;
+    height: 320px;
+}
+
+.pqct p{
+    margin-top: -1%;
+    margin-left: 13%;
+}
+.pqct h1{
+    padding: 2%;
+    margin-left: 11%;
+}
+
+
+
+.qsft h1{
+    
+    text-align: center;
+    color: white;
+    background-image:linear-gradient(to right, #147cccec, #0770c0e1); 
+    height: 50px;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 34pt;
+    font-family: 'Roboto', sans-serif  ;
+    width: 100%;
+    line-height: 59px;
+    margin-top: -0.5%;
+    
+}
+
+.textos{
+
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.t1, .t2{
+
+    
+    font-size: 15pt;
+    color: rgba(0, 0, 0, 0.877);
+}
+
+
+
+.qea{
+    background-color: rgb(255, 255, 255);
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#qeah{
+
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.missao, .criacaodesite {
+
+    border: 3px dashed rgb(0, 0, 0);
+    padding: 10px;
+    height: auto;
+    width: auto;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 4%;
+ }
+
+
+.missao h1, .criacaodesite h1{
+    
+    font-size: 24pt;
+    border-radius: 2px;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    margin-bottom: 20px;
+    
+}
+
+ .missao p, .criacaodesite p{
+    text-align: center;
+}
+ 
+
+.idea{
+
+    width: 100%;
+    height: 300px;
+    background-color: #0f2357;
+    text-align: center;
+    font-family: 'Roboto', sans-serif  ;
+}
+
+.idea h1{
+
+    padding: 40px; 
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+
+}
+
+.idea a {
+
+    padding: 18px;
+    border-radius: 3px;
+    color: white;
+    font-weight: 700;
+    background-color: rgba(238, 75, 25, 0.918);
+    text-decoration: none;    
+}
+
+
+.divdown{
+
+    margin-top: 2px;
+    width: 100%;
+    height: 350px;
+    background-image: linear-gradient(to right, rgb(43, 102, 170), rgb(9, 75, 146) );
+    font-family: 'Roboto', sans-serif  ;
+}
+
+.divdown h3{
+    color: rgb(255, 255, 255);
+}
+
+.divdown #links{
+
+    margin-top: 0%;
+    margin-left: 1%;
+    padding: 5%;
+    margin-bottom: -4%;
+}
+
+.divdown #contacto{
+    display: none;
+}
+
+.divdown ul li a{
+
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+    margin-left: 4%;
+    
+}
+
+.divdown  a:hover{
+    color: rgb(255, 255, 255);
+    
+}
+
+.divdown li{
+    margin-bottom: 5px;
+}
+
+.divdown #tel, #mail{
+    display: none;
+
+}
+
+.footer{
+
+    overflow: hidden;
+    background-color: #1b1b1b;
+    width: 100%;
+    height: 40px;
+}
+
+.footer p{
+
+    margin-top: 12px;
+    color: #ffffff;
+    font-family: 14px 'Open Sans', sans-serif ;
+    text-align: center;
+
+}
+
+#subirTopo {
+
+    text-decoration: none;
+    bottom: -10px;
+    left: 10px;
+    color: rgb(0, 255, 55);
+    text-align: center;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: fixed;
+    font-family: sans-serif;
+    opacity: 1;
+    }
+    
+    
+    #subirTopo:hover {
+    opacity:1;
+    }
+
+
+.t1::after {
+
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+
+
+
+
+/*Medias*/
+
+
+@media screen and (max-width: 1000px) {
+
+    #lg img{
+        width: 5%;
+        left: 20%;
+        float: left;
+        position: absolute;
+        top: 8%;
+    }
+    
+    
+    .aa {
+        float: right;
+        margin-right: 25%;
+        margin-top: 8px;
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+        padding: 10px;
+       
+         
+            
+    }
+    
+    .aa a{
+    
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 12pt;
+        margin-right: 20px;
+    
+    }
+
+    .t1, .t2{
+
+        font-size: 19pt;
+    }
+
+    .missao p, .criacaodesite p{
+
+        font-size: 16pt;
+
+    }
+
+    .idea h1{
+        font-size: 24pt;
+    }
+
+    #ctd{
+        font-size: 14pt;
+    }
+
+    .divdown h3{
+        font-size: 16pt;
+    }
+
+    .divdown a {
+        font-size: 14pt;
+    }
+    
+}
+
+
+@media screen and (max-width: 1030px) {
+
+ 
+    #lg img{
+        width: 35px;
+        left: 20%;
+        float: left;
+        position: absolute;
+        top: 8%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+ 
+    #lg img{
+        width: 35px;
+        left: 20%;
+        float: left;
+        position: absolute;
+        top: 8%;
+    }
+
+}
+
+
+@media (max-width: 650px){
+    
+    .up{
+        position: relative;
+        height: 25px;
+    }
+
+    
+    .ct img{
+        display: none;
+        
+       
+    }
+    
+    .ct p{
+        padding: 7px;
+        
+    }
+    
+
+    
+    #one, #two{
+        float: right;
+        font-size: 10pt;
+        margin-top: 1%;
+        
+    }
+    #two{
+        float: left;
+    }
+    
+    #lg img{
+        width: 8%;
+        left: 5%;
+        float: left;
+        position: absolute;
+        top: 1%;
+    }
+    
+    .about{
+        position: relative;
+        z-index: 1000;
+        width: 100%;
+        top: 10px;
+        height: 40px;
+        font: normal bold 6px / 10px "Roboto", Helvetica, Arial, Verdana, sans-serif;
+        
+            
+}
+
+    #image1{
+        height: 500px;
+        margin-top: 5%;
+        width: 100%;
+    }
+
+
+    .aa {
+        float: right;
+        margin-right: 25%;
+        margin-top: 8px;
+        display: flex;
+        justify-content: center;
+        width: 20%;
+        padding: 10px;
+       
+         
+            
+    }
+    
+    .aa a{
+        margin-left: 10px;
+        font-size: 12pt;
+    }
+
+    
+
+    .divdown{
+        margin-top: 2px;
+        width: 100%;
+        height: 350px;
+        background-image: linear-gradient(to right, rgb(43, 102, 170), rgb(9, 75, 146) );
+        font-family: 'Roboto', sans-serif  ;
+    }
+    
+    .divdown h3{
+        color: white;
+        font-size: 15px;
+    }
+    
+    .divdown #links{
+        margin-top: 0%;
+        margin-left: 1%;
+        padding: 5%;
+        margin-bottom: -4%;
+    }
+       
+    .divdown ul li a{
+        color: rgb(37, 37, 37);
+        text-decoration: none;
+        margin-left: 2%;
+        font-size: 15px;
+        
+    }
+ 
+    
+    
+    .qsft h1{
+        text-align: center;
+        color: white;
+        background-image:linear-gradient(to right, #147cccec, #0770c0e1); 
+        height: 50px;
+        border-radius: 2px;
+        font-weight: 700;
+        font-size: 22pt;
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        line-height: 59px;
+        margin-top: -0.5%;
+        
+    }
+
+    .textos{
+        padding:2% ;
+    }
+
+    .t1, .t2{
+
+        font-size: 13pt;
+    }
+    
+     .qea{
+        background-color: rgb(255, 255, 255);
+        margin-top: 15%;
+        margin-bottom: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    #qeah{
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+     
+
+    
+    .missao, .criacaodesite {
+        border: 3px dashed rgb(0, 0, 0);
+        padding: 10px;
+        font-family: sans-serif;
+        color: rgb(0, 0, 0);
+        margin-bottom: 4%;
+     }
+    
+    
+    .missao h1, .criacaodesite h1{
+        
+        font-size: 16pt;
+            
+    }
+
+    .missao p, .criacaodesite p{
+        font-size: 12pt;
+    }
+    
+ 
+   
+    .idea h1{
+        padding: 45px; 
+        font-size: 20pt;
+    
+    }
+    
+    .idea a{
+        padding: 15px;
+        border-radius: 3px;
+        font-weight: 600;
+    }
+       
+    
+    .whatsapp-link {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 5px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 1000;
+    }
+    
+    .fa-whatsapp {
+        margin-top:10px;
+    }
+    
+
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+    .up{
+        display: none;
+
+    }
+
+    .about a{
+        font-size: 11pt;
+        font-weight: 700;
+    }
+
+    .aa{
+        margin-right: 30%;
+    }
+
+    .qsft h1{
+        text-align: center;
+        color: white;
+        background-image:linear-gradient(to right, #147cccec, #0770c0e1); 
+        height: 50px;
+        border-radius: 2px;
+        font-weight: 700;
+        font-size: 18pt;
+        font-family: 'Roboto', sans-serif  ;
+        width: 100%;
+        line-height: 59px;
+        margin-top: -0.5%;        
+    }
+
+        
+     
+    .missao h1, .criacaodesite h1{
+        
+        font-size: 14pt;
+            
+    }
+
+    
+    .divdown h3{
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+    }
+    
+    .divdown #links{
+        margin-top: 0%;
+        margin-left: 1%;
+        padding: 5%;
+        margin-bottom: -5%;
+    }
+
+    .divdown #contacto{
+        margin-top: -4%;
+        margin-left: 1%;
+        padding: 5%;
+        margin-bottom: -5%;
+        display: block;
+    }
+    
+       
+    .divdown ul li a{
+        color: rgb(37, 37, 37);
+        text-decoration: none;
+        margin-left: 2%;
+        font-size: 15px;
+        
+    }
+
+    .divdown #tel, #mail{
+        display: block;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 310px) {
+
+ 
+    .about a{
+        font-size: 10pt;
+        font-weight: 700;
+        margin-right: 5px;
+    }
+
+    .aa{
+
+        margin-right: 30%;
+    }
+
+    .missao h1, .criacaodesite h1{
+        
+        font-size: 12pt;
+            
+    }
+
+    .missao p, .criacaodesite p{
+        font-size: 10pt;
+    }
+    
+}
+
+@media screen and (max-width: 280px) {
+
+    #lg img{
+        width: 8%;
+        left: 5%;
+        float: left;
+        position: absolute;
+        top: 20%;
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JC Sites - Contacte-nos</title>
+    <link rel="stylesheet" href="../source/jccontact.css">
+    <link rel="shortcut icon" href="jclogo1.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="up">
+            <div class="ct">
+                <p id ="nr">
+                    <img src="cel.png" alt="imagem de um celular">
+                    <a href="tel:+244 940557509" id="one">+244 940 557 509</a>
+
+                    <img src="zapp.png" alt="whatsapp">
+                    <p id="two">+244 948 005 138</p>
+                
+                    <img src="maill.png" alt="whatsapp">
+                    <a href="mailto:JCsites@gmail.com" id="three">JCsites@gmail.com</a>
+                </p>
+
+
+            </div>
+        </div>
+    
+        <div class="about">
+        
+            <span> 
+                <a href="jc.html" id="lg">
+                <img src="jclogo1.png" alt="JC logo">  
+                </a> 
+                </span>
+
+                <div class="aa">
+                <span><a href="#" id="contactenos">CONTACTE - NOS</a></span>
+                <span><a href="jcsobre.html" id="sobrenos">SOBRE NÓS</a></span>
+                <span><a href="jc.html" id="inicio"> INÍCIO</a></span>
+    
+        </div>
+
+    
+   
+        
+    </header>
+
+    <div class="corpo">
+
+        <div class="sms">
+            <label for="email" >Digite o seu e-mail</label>
+            <input type="email" id="email">
+
+            <label for="texto">Escreva a sua solicitação</label>
+            <input type="text" id="texto">
+        </div>
+    
+    </div>
+
+
+
+        <a id="subirTopo">
+            &uparrow; 
+          </a>
+
+    </div>
+
+    <div class="pub">
+        <h1 id="idea">
+            Tem Alguma Idéia em Mente? 
+  
+        </h1>
+
+        <a href="jc.html" id="ctd">Contacte-Nos</a>
+  
+    </div>
+
+    <div class="divdown">
+      
+        <h3>Links Rápidos</h3>
+        <ul type='none'>
+            <li><a href="cad.html">Início</a></li>
+            <li><a href="cadsobre.html">Sobre Nós</a></li>
+            <li><a href="cadcontact.html">Contacte-Nos</a></li>
+            <li><a href="#">Termos e Políticas</a></li>
+            <li><a href="#">Programas Afiliados</a></li>
+            <li><a href="#">Nossos Parceiros</a></li>
+
+        </ul>
+  
+    </div>
+  
+    <div class="footer">
+        <p id="copy"><sup>&copy; </sup>2017 - 2021 JCsites</p>
+        <p id="vai">NÃO PERCA MAIS TEMPO, CONTRATE - NOS ! A JC SITES É A SUA MELHOR OPÇÃO. </p>
+
+    </div>
+
+
+      <script>
+        function typeWriter(elemento) {
+          const textoArray = elemento.innerHTML.split('');
+          elemento.innerHTML = '';
+          textoArray.forEach((letra, i) => {
+            setTimeout(() => elemento.innerHTML += letra, 100 * i);
+          });
+        }
+      
+        // Se estiver tendo problemas com performance, utilize o FOR loop como abaixo no local do forEach
+        // function typeWriter(elemento) {
+        //   const textoArray = elemento.innerHTML.split('');
+        //   elemento.innerHTML = '';
+        //   for(let i = 0; i < textoArray.length; i++) {
+        //     setTimeout(() => elemento.innerHTML += textoArray[i], 75 * i);
+        //   }
+        // }
+      
+        const jc = document.querySelector('#jc');
+        const idea = document.querySelector('#idea');
+        typeWriter(jc);
+        typeWriter(idea);
+
+      </script>
+
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+
+jQuery("#subirTopo").hide();
+
+jQuery('a#subirTopo').click(function () {
+         jQuery('body,html').animate({
+           scrollTop: 0
+         }, 1100);
+        return false;
+   });
+
+jQuery(window).scroll(function () {
+         if (jQuery(this).scrollTop() > 100) {
+            jQuery('#subirTopo').fadeIn();
+         } else {
+            jQuery('#subirTopo').fadeOut();
+         }
+     });
+});
+</script>
+
+
+
+</body>
+</html>
