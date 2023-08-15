@@ -1,7 +1,9 @@
 body{
 
-    margin-top: 40%;
-    padding: 50px;
+    margin-top: 30%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 20px;
     box-sizing: border-box;
     width: 100%;
     overflow: hidden;
