@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     border-radius: 0;
+    box-sizing: border-box;
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
 }
@@ -28,7 +29,8 @@ body{
 }
 
 .up{
-    background-color: #001e69;
+    
+    background-color: rgb(31, 174, 231);
     width: 100%;
     height: 40px;
     position: fixed;
@@ -40,98 +42,124 @@ body{
 }
 
 
+.ct{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    
+    
+
+}
 .ct img{
     width: 20px;
-    display: inline;
-    margin-top: 1.5%;
+      
+}
+
+
+.ct span{
+
+    margin: 3px 25px 0px 0px;
+    
    
 }
-
-.ct p{
-    display: inline;
-    padding: 25px;
-    
-  
-}
-
-
-.ct{
-    color: rgb(255, 255, 255);
-    display: inline;
-    float: right;
-    
-}
-
 
 .ct a{
+
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    display: inline;
-   
+    color: white;
+
 }
 
-#one{
-    margin-right: 20px;
-    margin-left: 5px;
-}
-
-
-#two{
-    margin-left: 10px;
-    
-}
-
-#lg img{
-    width: 2.5%;
+/*
+#logo img{
+    width: 5.5%;
     left: 20%;
     float: left;
-    position: absolute;
+    
     top: 6%;
 }
+*/
 
 
-.about{
+.menu{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     position: fixed;
+    padding: 5px;
     z-index: 1000;
     width: 100%;
-    background-color: rgb(255, 255, 255);
     top: 40px;
+    background-color: rgb(255, 255, 255);
     height: 40px;
     font: normal bold 6px / 10px "Roboto", Helvetica, Arial, Verdana, sans-serif;
          
 }
 
-.aa {
-    float: right;
-    margin-right: 18%;
-    margin-top: 8px;
+.logo{
     display: flex;
-    justify-content: space-between;
-    width: 20%;
-    padding: 10px;
+    align-self: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+   
+}
+
+.logo img{
+
+    width: 40px;
+    transition: .3s;
+}
+
+.links {
+
+    height: 100%;
+    width: 50%;
+    display: flex;
+    gap: 70px;
+    justify-content:center;
+    align-items: center;
+
    
      
         
 }
 
-.aa a{
-
+.links span a{
+    text-align: center;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 11pt;
-    margin-right: 20px;
-
+    color: rgb(0, 0, 0);    
+    font-size: 11pt;    
+  
 }
 
 
-.aa a:hover{
-    color: rgb(0, 72, 228);
+
+.links a::after{
+
+    content: "";
+    background-color: black;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 4px auto;
     transition: .4s;
+
+}
+
+.links a:hover::after{
+
+    width: 100%;
     
 }
 
 
-.about #inicio{
+
+.menu #inicio{
     color: rgb(0, 72, 228);
 }
 
@@ -144,7 +172,10 @@ body{
 
 .welcome img{
     height: 560px;
-    width: 100%;    
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;    
 }
 
 
@@ -209,33 +240,64 @@ body{
 
 
  .beneficios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     background-color: rgb(31, 174, 231);
     height: 655px;
     width: 100%;
 }
 
-.beneficios img{
-    width: 30%;
-    display: inline;
-    float: right;
-    margin-top: -27%;
-    margin-right: 12%;
+.beneficios .lista{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    gap: 40px ;
+
+
+}
+
+.beneficios .imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+
+}
+
+.beneficios .imagem img{
+    width: 550px;
+    transition: .5s;
+
+}
+
+.beneficios .imagem img:hover{
+
+    transform: scale(1.1);
+
 }
 
 .beneficios h2{
-    margin-top: 10%;
-    color: #000000;
+    
+    color: #001eff;
     font-family: "Poppins", Sans-serif;
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 600;
-    margin-left: 5%;
-    padding: 5%;
+
+
 }
 
 .beneficios li{
-    margin-bottom: 7px;
-    font-size: 14pt;
-    margin-left: 10%;
+
+    font-size: 20pt;
+    margin-bottom: 15px;
     color: white;
 }
 
@@ -246,21 +308,69 @@ body{
     flex-wrap: wrap;
     width: 100%;
     margin-top: 12%;
+    font-family: Arial, Helvetica, sans-serif;
     
-    
+}
+
+
+
+.p1, .p2, .p3{
+
+    background-color: rgb(46, 177, 229);
+    padding: 15px;
+    border-radius: 15px;
+    transition: .5s;
+
+}
+
+
+
+.p1:hover{
+
+    margin-top: -50px;
+    margin-bottom: 50px;
+    animation: animate-outline .7s ease-out infinite;
+    background-color: rgba(61, 166, 246, 0.934);
+}
+
+.p2:hover{
+
+    margin-top: -50px;
+    margin-bottom: 50px;
+    animation: animate-outline .7s ease-out infinite;
+    background-color: rgba(61, 166, 246, 0.934);
+}
+
+
+
+.p3:hover{
+
+    margin-top: -50px;
+    margin-bottom: 50px; 
+    animation: animate-outline .7s ease-out infinite;
+    background-color: rgba(61, 166, 246, 0.934);
 }
 
 
 .p1 h1, .p2 h1, .p3 h1{
     color: #fff;
-    background-color: #60ce16;
-    border-radius: 2px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 50px;
     text-align: center;
+    width: 400px;
+
    
 }
 
+
+
+
+
 .p1 ul li, .p2 ul li, .p3 ul li {
     margin-bottom: 10px;
+    font-size: 14pt;
+    color: white;
 
 }
 
@@ -268,16 +378,23 @@ body{
 
 
 .pqct img{
-    background-image: linear-gradient(to right, rgba(64, 135, 216, 0), rgb(37, 126, 222) );
+
     width: 30%;
     height: 250px;
     float: right;
     margin-top: 1%;
     margin-right: 10%;
+    transition: .5s;
+}
+
+.pqct img:hover{
+
+    transform: scale(1.1);
+
 }
 
 .pqct{
-    background-image: linear-gradient(to right, rgb(33, 123, 226), rgb(37, 126, 222) );
+    background-color: rgb(31, 174, 231);
     width: 100%;
     margin-top: 13%;
     height: 320px;
@@ -302,7 +419,7 @@ body{
 
     width: 100%;
     height: 300px;
-    background-color: #0f2357;
+    background-color: #0034a3d9;
     text-align: center;
     font-family: 'Roboto', sans-serif  ;
 }
@@ -318,11 +435,25 @@ body{
 .idea a {
 
     padding: 18px;
-    border-radius: 3px;
+    border-radius: 5px;
     color: white;
     font-weight: 700;
-    background-color: rgba(238, 75, 25, 0.918);
-    text-decoration: none;    
+    background-color: rgb(31, 174, 231);
+    text-decoration: none;  
+    animation: animate-outline .8s ease-out infinite ;  
+}
+
+@keyframes animate-outline{
+
+    from{
+        outline: 0px solid  rgba(25, 167, 238, 0.918);
+
+    }
+
+    to {
+        outline: 10px solid  rgba(36, 122, 234, 0.255);
+
+    }
 }
 
 
@@ -331,7 +462,7 @@ body{
     margin-top: 2px;
     width: 100%;
     height: 350px;
-    background-image: linear-gradient(to right, rgb(43, 102, 170), rgb(9, 75, 146) );
+    background-color: rgb(31, 174, 231);
     font-family: 'Roboto', sans-serif  ;
 }
 
@@ -418,7 +549,7 @@ body{
 @media screen and (max-width: 1030px) {
 
  
-    #lg img{
+    #logo img{
         width: 35px;
         left: 20%;
         float: left;
@@ -571,7 +702,7 @@ body{
 @media screen and (max-width: 1280px) {
 
  
-    #lg img{
+    #logo img{
         width: 35px;
         left: 20%;
         float: left;
@@ -587,7 +718,7 @@ body{
         font-size: 12pt;
     }
 
-    .aa a{
+    .links a{
         font-size: 12pt;
     }
 
@@ -650,7 +781,7 @@ body{
         float: left;
     }
     
-    #lg img{
+    #logo img{
         width:8%;
         left: 5%;
         float: left;
@@ -658,7 +789,7 @@ body{
         top: 1%;
     }
     
-    .about{
+    .menu{
         position: relative;
         z-index: 1000;
         width: 100%;
@@ -667,7 +798,7 @@ body{
         font: normal bold 6px / 10px "Roboto", Helvetica, Arial, Verdana, sans-serif;
     }
 
-    .aa {
+    .links {
         float: right;
         margin-right: 25%;
         margin-top: 8px;
@@ -678,7 +809,7 @@ body{
             
     }
     
-    .aa a{
+    .links a{
         margin-left: 10px;
         font-size: 12pt;
     }
@@ -877,12 +1008,12 @@ body{
 
     }
 
-    .about a{
+    .menu a{
         font-size: 11pt;
         font-weight: 700;
     }
 
-    .aa{
+    .links{
         margin-right: 30%;
     }
 
@@ -1010,13 +1141,13 @@ body{
 @media screen and (max-width: 310px) {
 
  
-    .about a{
+    .menu a{
         font-size: 10pt;
         font-weight: 700;
         margin-right: 5px;
     }
 
-    .aa{
+    .links{
 
         margin-right: 30%;
     }
@@ -1048,7 +1179,7 @@ body{
 
 @media screen and (max-width: 280px) {
 
-    #lg img{
+    #logo img{
         width: 8%;
         left: 5%;
         float: left;
