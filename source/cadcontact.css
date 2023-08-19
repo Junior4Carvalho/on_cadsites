@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
   }
   
   body {
@@ -100,15 +101,48 @@
     background: #09d;
   }
 
-
   #voltar{
-      color: rgb(255, 255, 255); 
-      text-decoration: none;
-      font-size: 1.5em;
-      position: absolute;
-      top: 1%;
-      left: 1%;
-      
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 18pt;
+    font-weight: 400;
+    transition: .5s;
+
   }
 
+@keyframes animate-outline {
+  
+  from{
+    outline: 0px solid  #4f9bf9f0;
+  }
+
+  to {
+    outline: 8px solid  rgba(36, 122, 234, 0.346);
+  }
+
+}
+
+
+.btn{
+
+  background-color: #4f9cf9;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  transition: .1s;
+  animation: animate-outline 1s ease-out infinite;
+}
+
+
+
+.btn:hover{
+
+  background-color: #3580db;
+  
+
+}
 
