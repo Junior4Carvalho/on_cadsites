@@ -9,13 +9,22 @@
     text-decoration: none;
     outline: none;
     font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    
 
 
 }
 
+*::selection{
+
+    background-color: rgb(50, 194, 237);
+    color: white;
+}
+
+
 body{
 
-    background-color: rgb(231, 226, 226);
+    background-color: #dddcdc;
     overflow-x: hidden;
 }
 
@@ -84,16 +93,6 @@ body{
 
 }
 
-/*
-#logo img{
-    width: 5.5%;
-    left: 20%;
-    float: left;
-    
-    top: 6%;
-}
-*/
-
 header{
 
     background-position: center;
@@ -131,11 +130,12 @@ nav ul{
 
 nav ul a{
 
-    color: rgb(1, 139, 213);
+    color: rgb(23, 83, 235);
     margin: 0 25px;
     text-transform: uppercase;
     font-size: 20px;
     display: block;
+    font-weight: 550;
 
 }
 
@@ -147,7 +147,7 @@ nav img{
 nav ul a:not(.btn):after{
 
     content: "";
-    background-color:  #397ef5;;
+    background-color:  #df2f10;;
     height: 3px;
     width: 0%;
     display: block;
@@ -175,13 +175,13 @@ section{
     justify-content: center;
 }
 
+
 .banner .banner-text{
 
     text-align: center;
-    margin: 100px;
+    margin: 70px 80px;
     padding: 150px 90px;
 }
-
 
 .banner .banner-text h1{
     color: white;
@@ -194,9 +194,19 @@ section{
     color: white;
     margin: 20px 0;
     font-size: 25px;
-    font-weight: lighter;
+    font-weight: 500;
 
 }
+
+.banner .banner-text a{
+
+    font-size: 25px;
+    margin-top: 50px;
+
+
+}
+
+
 
 .btn{
 
@@ -220,52 +230,39 @@ section{
 }
 
 
-.objectivo img{
-    height: 400px;
-    width: 40%;
-    margin-bottom: 2%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    
-}
-
 .objectivo{
-    background-color: rgb(231, 226, 226);
-    margin-bottom: 13%;
-    padding: 2%;
+    background-color: #dddcdc;
+    width: 100%;
+    padding: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    gap: 10px 0px;
+    
 
 }
+
+
+.objectivo img{
+    height: 400px;
+    width: 800px;
+
+}
+
 
 .objectivo p{
-
-    line-height: 1.2 ;
-    font-size: 14pt;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 30px;
-}
-
-
-.objectivo #p1{
-    color: rgb(228, 35, 35);
+    padding: 10px;
+    margin: 0px 400px;
+    text-align: center;
+    font-weight:normal;
+    line-height: 30px;
+    font-size: 18pt;
+    color: #000000;
+    transition: .3s;
 
 }
 
-.objectivo #p2{
-    color: rgba(37, 37, 37, 0.849);
-}
-
-.objectivo p::selection{
-
-    background-color: rgb(50, 228, 26);
-    color: white;
-}
 
 
  .beneficios{
@@ -277,17 +274,19 @@ section{
     background-color: rgb(31, 174, 231);
     height: 655px;
     width: 100%;
+    padding: 50px;
 }
 
 .beneficios .lista{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 50%;
     height: 100%;
-    gap: 40px ;
+    padding: 50px;
+    gap: 20px; 
 
 
 }
@@ -298,6 +297,7 @@ section{
     align-items: center;
     width: 50%;
     height: 100%;
+    padding: 50px;
 
 }
 
@@ -314,28 +314,72 @@ section{
 }
 
 .beneficios h2{
-    
-    color: #001eff;
+
+    color: #ffffff;
     font-size: 36px;
     font-weight: 600;
 
+}
 
+.beneficios h2::after{
+
+    content: "";
+    background-color:  #d4e825;;
+    height: 5px;
+    width: 5%;
+    display: block;
+    margin: 4px auto;
+    transition: .7s;
+
+}
+
+.beneficios h2:hover::after{
+
+    width: 100%;
 }
 
 .beneficios li{
-
-    font-size: 20pt;
+    transition: .5s;
+    font-size: 18pt;
     margin-bottom: 15px;
     color: white;
 }
+
+.beneficios li:hover{
+    transform: scale(1.1);
+
+}
+
+.beneficios li::after{
+
+    content: "";
+    background-color:  #484848;;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 4px 0px;
+    transition: .7s;
+    opacity: 0%;
+
+}
+
+.beneficios li:hover::after{
+
+    width: 65%;
+    opacity: 30%;
+}
+
 
 
 .planos{
     display: flex;
     justify-content: space-around;
+    align-items: stretch;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 12%;
+    margin: 100px 0px;
+    padding: 200px 100px;
+    background-color: #dddcdc;
     
 }
 
@@ -347,9 +391,33 @@ section{
     padding: 15px;
     border-radius: 15px;
     transition: .5s;
+    text-align: center;
+    width: 450px;
+    height: 650px;
 
 }
 
+.p1 h1, .p2 h1, .p3 h1{
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+
+   
+}
+
+
+
+
+
+.p1 ul li, .p2 ul li, .p3 ul li {
+    margin-bottom: 10px;
+    font-size: 14pt;
+    color: white;
+    text-align: center;
+
+}
 
 
 .p1:hover{
@@ -368,8 +436,6 @@ section{
     background-color: rgba(61, 166, 246, 0.934);
 }
 
-
-
 .p3:hover{
 
     margin-top: -50px;
@@ -379,38 +445,24 @@ section{
 }
 
 
-.p1 h1, .p2 h1, .p3 h1{
-    color: #fff;
-    padding: 5px;
-    border-radius: 10px;
-    margin-bottom: 50px;
-    text-align: center;
-    width: 400px;
 
-   
-}
-
-
-
-
-
-.p1 ul li, .p2 ul li, .p3 ul li {
-    margin-bottom: 10px;
-    font-size: 14pt;
+.pqct{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+    height: 320px;
+    background-color: rgb(31, 174, 231);
     color: white;
 
+
 }
-
-
-
 
 .pqct img{
 
-    width: 30%;
+    width: 600px;
     height: 250px;
-    float: right;
-    margin-top: 1%;
-    margin-right: 10%;
     transition: .5s;
 }
 
@@ -420,23 +472,17 @@ section{
 
 }
 
-.pqct{
-    background-color: rgb(31, 174, 231);
-    width: 100%;
-    margin-top: 13%;
-    height: 320px;
-    color: white;
-    margin-bottom: -2.7%;
-}
-
 
 .pqct p{
-    margin-top: -1%;
-    margin-left: 13%;
+    color: white;
+    font-size: 14pt;
+    font-weight: normal;
+
 }
 .pqct h1{
-    padding: 2%;
-    margin-left: 11%;
+    color: white;
+    padding: 20px 0px;
+   
 }
 
 
@@ -445,27 +491,26 @@ section{
 
     width: 100%;
     height: 300px;
+    padding: 50px;
     background-color: #0034a3d9;
     text-align: center;
 }
 
 .idea h1{
-
-    padding: 40px; 
+    
     color: rgb(255, 255, 255);
     font-size: 60px;
-
+    margin-bottom: 50px;
 }
 
 .idea a {
 
-    padding: 18px;
+    padding: 18px ;
     border-radius: 5px;
     color: white;
     font-weight: 700;
     background-color: rgb(31, 174, 231);
-    text-decoration: none;  
-    animation: animate-outline .8s ease-out infinite ;  
+     
 }
 
 @keyframes animate-outline{
@@ -484,89 +529,71 @@ section{
 
 .divdown{
 
-    margin-top: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
     width: 100%;
     height: 350px;
     background-color: rgb(31, 174, 231);
+    text-align:start;
 
 }
 
 .divdown h3{
-    color: rgb(255, 255, 255);
-}
-
-.divdown #links{
-
-    margin-top: 0%;
-    margin-left: 1%;
-    padding: 5%;
-    margin-bottom: -4%;
-}
-
-.divdown #contacto{
-    display: none;
-}
-
-.divdown ul li a{
-
-    color: rgb(37, 37, 37);
-    text-decoration: none;
-    font-size: 14pt;
-    margin-left: 4%;
-    transition: .2;
     
-}
-
-.divdown  a:hover{
     color: rgb(255, 255, 255);
-    
+    padding: 15px 0px;
+    margin-bottom: 10px;
+
 }
 
 .divdown li{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-.divdown #tel, #mail{
-    display: none;
-
+.divdown ul li a{
+    
+    color: rgb(37, 37, 37);
+    font-size: 14pt;
+    transition: .3s;
+    
 }
+
+.divdown  ul li a:hover{
+    color: rgb(255, 255, 255);
+    
+}
+
 
 .footer{
 
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #1b1b1b;
     width: 100%;
     height: 40px;
-}
-
-.footer p{
-
-    margin-top: 12px;
     color: #ffffff;
-    text-align: center;
-
 }
+
 
  #subirTopo {
     text-decoration: none;
-    bottom: -10px;
-    left: 10px;
-    color: rgb(0, 255, 55);
+    bottom: 5px;
+    left: 2px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
     text-align: center;
     cursor: pointer;
-    padding: 15px;
-    font-size: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
+    padding: 10px;
+    font-size: 14pt;
+    font-weight: 600;
     position: fixed;
-    opacity: 1;
-    }
+
+}
     
-    #subirTopo:hover {
-    opacity:1;
-    }
-
-
 
 /*Medias*/
 

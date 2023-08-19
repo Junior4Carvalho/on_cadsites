@@ -8,6 +8,8 @@ function typeWriter(elemento) {
     });
 }
 
+
+
 // Se estiver tendo problemas com performance, utilize o FOR loop como abaixo no local do forEach
 // function typeWriter(elemento) {
 //   const textoArray = elemento.innerHTML.split('');
