@@ -51,14 +51,14 @@ body{
 
 .up{
     
-    background-color: rgb(31, 174, 231);
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 40px;
     position: fixed;
-    z-index: 1000;
+    z-index: 2000;
     top: 0;
     left: 0;
-   
+    opacity: 100%;
 
    
 }
@@ -234,10 +234,11 @@ nav ul a:hover::after{
 .objectivo{
     background-color: #dddcdc;
     width: 100%;
+    height: 600px;
     padding: 100px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     gap: 10px 0px;
     
@@ -245,22 +246,38 @@ nav ul a:hover::after{
 }
 
 
-.objectivo img{
-    height: 400px;
-    width: 800px;
+.objectivo .objectivo-img{
+    width: 50%;
+    
 
 }
 
+.objectivo .objectivo-img img{
+    width: 600px;
+    transition: .3s;
+}
+
+.objectivo .objectivo-img img:hover{
+
+    transform: scale(1.1);
+
+}
+
+.objectivo .objectivo-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
 
 .objectivo p{
-    padding: 10px;
-    margin: 0px 400px;
-    text-align: center;
+
+    text-align: start;
     font-weight:normal;
     line-height: 30px;
     font-size: 16pt;
     color: #000000;
-    transition: .3s;
 
 }
 
@@ -344,11 +361,12 @@ nav ul a:hover::after{
     font-size: 18pt;
     margin-bottom: 15px;
     color: white;
+    width: 600px;
 }
 
 .beneficios li:hover{
     transform: scale(1.1);
-
+    margin-left: 50px;
 }
 
 .beneficios li::after{
@@ -478,6 +496,7 @@ nav ul a:hover::after{
     color: white;
     font-size: 14pt;
     font-weight: normal;
+    line-height: 25px;
 
 }
 .pqct h1{
