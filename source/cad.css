@@ -311,11 +311,10 @@ nav ul a:hover::after{
 
 .beneficios .imagem{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     width: 50%;
     height: 100%;
-    padding: 50px;
 
 }
 
