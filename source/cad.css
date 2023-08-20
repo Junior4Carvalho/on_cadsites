@@ -180,7 +180,7 @@ nav ul a:hover::after{
 .banner .banner-text{
 
     text-align: center;
-    margin: 70px 80px;
+    margin: 10px 80px;
     padding: 150px 90px;
 }
 
@@ -241,7 +241,7 @@ nav ul a:hover::after{
     justify-content: space-around;
     align-items: center;
     gap: 10px 0px;
-    
+    margin: 200px 0px;
 
 }
 
@@ -282,7 +282,6 @@ nav ul a:hover::after{
 }
 
 
-
  .beneficios{
     display: flex;
     flex-direction: row;
@@ -293,6 +292,7 @@ nav ul a:hover::after{
     height: 655px;
     width: 100%;
     padding: 50px;
+    margin: 200px 0px 0px 0px;
 }
 
 .beneficios .lista{
@@ -303,7 +303,7 @@ nav ul a:hover::after{
     align-items: flex-start;
     width: 50%;
     height: 100%;
-    padding: 50px;
+    padding: 10px;
     gap: 20px; 
 
 
@@ -311,7 +311,7 @@ nav ul a:hover::after{
 
 .beneficios .imagem{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: 50%;
     height: 100%;
@@ -336,6 +336,7 @@ nav ul a:hover::after{
     color: #ffffff;
     font-size: 36px;
     font-weight: 600;
+    margin: 0px 10px;
 
 }
 
@@ -359,7 +360,7 @@ nav ul a:hover::after{
 .beneficios li{
     transition: .5s;
     font-size: 18pt;
-    margin-bottom: 15px;
+    margin: 0px 0px 15px 25px;
     color: white;
     width: 600px;
 }
@@ -388,7 +389,11 @@ nav ul a:hover::after{
     opacity: 30%;
 }
 
-
+.beneficios a{
+    text-align: center;
+    margin: 10px;
+    width: 500px;
+}
 
 .planos{
     display: flex;
@@ -413,21 +418,17 @@ nav ul a:hover::after{
     text-align: center;
     width: 450px;
     height: 650px;
-
+    animation: animate-outline .7s ease-out infinite;
 }
 
 .p1 h1, .p2 h1, .p3 h1{
     color: #fff;
-    padding: 5px;
+    padding: 20px 0px ;
     border-radius: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
-
    
 }
-
-
-
 
 
 .p1 ul li, .p2 ul li, .p3 ul li {
@@ -443,7 +444,6 @@ nav ul a:hover::after{
 
     margin-top: -50px;
     margin-bottom: 50px;
-    animation: animate-outline .7s ease-out infinite;
     background-color: rgba(61, 166, 246, 0.934);
 }
 
@@ -451,7 +451,6 @@ nav ul a:hover::after{
 
     margin-top: -50px;
     margin-bottom: 50px;
-    animation: animate-outline .7s ease-out infinite;
     background-color: rgba(61, 166, 246, 0.934);
 }
 
@@ -459,10 +458,8 @@ nav ul a:hover::after{
 
     margin-top: -50px;
     margin-bottom: 50px; 
-    animation: animate-outline .7s ease-out infinite;
     background-color: rgba(61, 166, 246, 0.934);
 }
-
 
 
 .pqct{
