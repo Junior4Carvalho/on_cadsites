@@ -1,19 +1,43 @@
-body{
+@import url('https://ftons.googleapis.com/css2?font=Inter:wght@300;400;500;600;700&display=swap'); 
+
+
+*{
+
     margin: 0;
     padding: 0;
-    border-radius: 0;
-    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    
+
+
+}
+
+*::selection{
+
+    background-color: rgb(50, 194, 237);
+    color: white;
+}
+
+
+body{
+
+    background-color: #dddcdc;
+    overflow-x: hidden;
 }
 
 
 .whatsapp-link {
+    
 
     position: fixed;
     width: 60px;
     height: 60px;
     bottom: 70px;
     right: 25px;
-    background-color: #25d366;
+    background-color: rgb(31, 174, 231);
     color: #fff;
     border-radius: 50px;
     text-align: center;
@@ -26,113 +50,108 @@ body{
     margin-top: 16px;
 }
 
-#image1{
-    height: 500px;
-    margin-top: 10%;
-    width: 100%;
-}
-
 .up{
-    background-color: #001e69;
+    
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 40px;
     position: fixed;
-    z-index: 1000;
+    z-index: 2000;
     top: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+    left: 0;
+    opacity: 100%;
 
    
-}
-
-
-.ct img{
-    width: 20px;
-    display: inline;
-    margin-top: 1.5%;
-   
-}
-
-.ct p{
-    display: inline;
-    padding: 25px;
-    
-  
 }
 
 
 .ct{
-    color: rgb(255, 255, 255);
-    display: inline;
-    float: right;
-    
+    padding: 5px;
+    margin: 5px 10px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+
+}
+.ct img{
+    width: 20px;
+    margin-right: 10px;
 }
 
+.ct span{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
 
 .ct a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    display: inline;
-   
+
+    color: white;
+    text-transform: lowercase;
+ 
 }
 
-#one{
-    margin-right: 20px;
-    margin-left: 5px;
+header{
+
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
 }
 
 
-#two{
-    margin-left: 10px;
+.container{
+
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2%;
+
+}
+
+nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin: 40px 0px;
     
 }
 
-#lg img{
-    width: 2.5%;
-    left: 20%;
-    float: left;
-    position: absolute;
-    top: 6%;
-}
+nav ul{
 
-
-.about{
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    top: 40px;
-    height: 40px;
-    font: normal bold 6px / 10px "Roboto", Helvetica, Arial, Verdana, sans-serif;
-         
-}
-
-.aa {
-    float: right;
-    margin-right: 18%;
-    margin-top: 8px;
     display: flex;
-    justify-content: space-between;
-    width: 20%;
-    padding: 10px;
-   
-     
-        
-}
+    align-items: center;
 
-.aa a{
-
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 11pt;
-    margin-right: 20px;
 
 }
 
+nav ul a{
 
-.aa a::after{
+    color: rgb(23, 83, 235);
+    margin: 0 25px;
+    font-size: 20px;
+    display: block;
+    font-weight: 550;
+
+}
+
+nav img{
+    width: 100px;
+}
+
+/*
+nav ul a:not(.btn):after{
 
     content: "";
-    background-color: black;
+    background-color:  #df2f10;;
     height: 3px;
     width: 0%;
     display: block;
@@ -141,122 +160,149 @@ body{
 
 }
 
-.aa a:hover::after{
+nav ul a:hover::after{
 
     width: 100%;
     
-}
-
-.about #sobrenos{
-    color: rgb(0, 72, 228);
-}
+}*/
 
 
 
-.pqct img{
-    background-image: linear-gradient(to right, rgba(64, 135, 216, 0), rgb(37, 126, 222) );
-    width: 30%;
-    height: 250px;
-    top: 125%;
-    position: absolute;
-    right: 14%;
-}
+.banner{
 
-.pqct{
-    background-image: linear-gradient(to right, rgb(33, 123, 226), rgb(37, 126, 222) );
-    width: 100%;
-
-    margin-top: 8%;
-    height: 320px;
-}
-
-.pqct p{
-    margin-top: -1%;
-    margin-left: 13%;
-}
-.pqct h1{
-    padding: 2%;
-    margin-left: 11%;
+    padding: 154px 0;
+    display: flex;
+    justify-content: center;
 }
 
 
+.banner .banner-text{
 
-.qsft h1{
-    
     text-align: center;
-    color: white;
-    background-image:linear-gradient(to right, #147cccec, #0770c0e1); 
-    height: 50px;
-    border-radius: 2px;
-    font-weight: 700;
-    font-size: 34pt;
-    font-family: 'Roboto', sans-serif  ;
-    width: 100%;
-    line-height: 59px;
-    margin-top: -0.5%;
-    
+    margin: 10px 80px;
+    padding: 150px 90px;
+
 }
+
+.banner .banner-text h1{
+    color: white;
+    font-size: 70px;
+
+}
+
+.banner .banner-text p{
+
+    color: rgb(255, 255, 255);
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+.banner .banner-text a{
+
+    font-size: 25px;
+    margin-top: 50px;
+
+
+}
+
+
+
+.btn{
+
+    background-color: rgb(31, 174, 231);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: .3s;
+    animation: animate-outline 1s ease-out infinite;
+}
+
+
+
+.btn:hover{
+
+    background-color: #4f9cf9;
+    
+
+}
+
+
 
 .textos{
 
-    margin-top: 10%;
+  
+    padding: 0px 200px;
+    margin: 200px 50px;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+    gap: 80px;
     flex-wrap: wrap;
     
 }
 
-.t1, .t2{
-
+.textos h2{
     
-    font-size: 15pt;
+    text-align: center;
+    font-size: 28pt;
+
+}
+
+.textos p{
+
+    font-size: 18pt;
     color: rgba(0, 0, 0, 0.877);
 }
 
 
 
 .qea{
-    background-color: rgb(255, 255, 255);
-    margin-top: 10%;
+    background-color: rgb(201, 198, 198);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 200px;
+    padding: 100px;
+    gap: 100px;
 }
 
 #qeah{
 
     text-align: center;
+    font-size: 28pt;
     color: rgb(0, 0, 0);
 }
 
 .missao, .criacaodesite {
+    
+    border-radius: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 50px;
+    height: 350px;
+    width: 1200px;
 
-    border: 3px dashed rgb(0, 0, 0);
-    padding: 10px;
-    height: auto;
-    width: auto;
-    font-family: sans-serif;
-    color: rgb(0, 0, 0);
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 4%;
  }
 
 
-.missao h1, .criacaodesite h1{
-    
-    font-size: 24pt;
-    border-radius: 2px;
-    font-weight: 500;
-    text-align: center;
-    color: rgb(255, 0, 0);
+.missao h2, .criacaodesite h2{
+    padding: 20px;
     margin-bottom: 20px;
+    font-size: 28pt;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
     
 }
 
  .missao p, .criacaodesite p{
     text-align: center;
+    font-size: 18pt;
+    margin: 0px 50px;
 }
  
 
@@ -264,28 +310,26 @@ body{
 
     width: 100%;
     height: 300px;
-    background-color: #0f2357;
+    padding: 50px;
+    background-color: #064aa9d9;
     text-align: center;
-    font-family: 'Roboto', sans-serif  ;
 }
 
 .idea h1{
-
-    padding: 40px; 
+    
     color: rgb(255, 255, 255);
     font-size: 60px;
-
+    margin-bottom: 50px;
 }
 
 .idea a {
 
-    padding: 18px;
+    padding: 18px ;
     border-radius: 5px;
     color: white;
     font-weight: 700;
-    background-color: rgba(25, 146, 238, 0.918);
-    text-decoration: none;  
-    animation: animate-outline 1s ease-out infinite ;  
+    background-color: rgb(31, 174, 231);
+     
 }
 
 @keyframes animate-outline{
@@ -302,87 +346,74 @@ body{
 }
 
 
-
 .divdown{
-
-    margin-top: 2px;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items:stretch;
+    padding: 100px;
     width: 100%;
-    height: 350px;
-    background-image: linear-gradient(to right, rgb(43, 102, 170), rgb(9, 75, 146) );
-    font-family: 'Roboto', sans-serif  ;
+    height: 500px;
+    background-color: rgb(31, 174, 231);
+    text-align:start;
+
 }
+
+
 
 .divdown h3{
-    color: rgb(255, 255, 255);
-}
-
-.divdown #links{
-
-    margin-top: 0%;
-    margin-left: 1%;
-    padding: 5%;
-    margin-bottom: -4%;
-}
-
-.divdown #contacto{
-    display: none;
-}
-
-.divdown ul li a{
-
-    color: rgb(37, 37, 37);
-    text-decoration: none;
-    margin-left: 4%;
     
-}
-
-.divdown  a:hover{
     color: rgb(255, 255, 255);
-    
+    padding: 15px 0px;
+    margin-bottom: 10px;
+
 }
 
 .divdown li{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-.divdown #tel, #mail{
-    display: none;
-
+.divdown ul li a{
+    
+    color: rgb(37, 37, 37);
+    font-size: 14pt;
+    transition: .3s;
+    
 }
 
-.footer{
+.divdown  ul li a:hover{
+    color: rgb(255, 255, 255);
+    
+}
 
-    overflow: hidden;
+
+footer .cright{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #1b1b1b;
     width: 100%;
     height: 40px;
-}
-
-.footer p{
-
-    margin-top: 12px;
     color: #ffffff;
-    font-family: 14px 'Open Sans', sans-serif ;
-    text-align: center;
-
 }
 
-#subirTopo {
 
+ #subirTopo {
     text-decoration: none;
-    bottom: -10px;
-    left: 10px;
-    color: rgb(0, 255, 55);
+    bottom: 5px;
+    left: 2px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
     text-align: center;
     cursor: pointer;
-    padding: 15px;
-    font-size: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
+    padding: 10px;
+    font-size: 14pt;
+    font-weight: 600;
     position: fixed;
-    font-family: sans-serif;
-    opacity: 1;
-    }
+
+}
     
     
     #subirTopo:hover {
@@ -398,6 +429,8 @@ body{
     display: inline-block;
     animation: blink .7s infinite;
   }
+
+
 
   @keyframes blink {
     0%, 100% {

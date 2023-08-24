@@ -31,6 +31,7 @@ body{
 
 .whatsapp-link {
 
+
     position: fixed;
     width: 60px;
     height: 60px;
@@ -91,7 +92,6 @@ body{
 
 .ct a{
 
-    text-decoration: none;
     color: white;
     text-transform: lowercase;
  
@@ -102,7 +102,6 @@ header{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    opacity: 90%;
 
 
 }
@@ -319,7 +318,7 @@ nav ul a:hover::after{
 }
 
 .beneficios .imagem img{
-    width: 550px;
+    width: 600px;
     transition: .5s;
 
 }
@@ -467,17 +466,18 @@ nav ul a:hover::after{
     align-items: center;
     padding: 50px;
     width: 100%;
-    height: 380px;
+    height: 500px;
     background-color: rgb(31, 174, 231);
     color: white;
+
 
 
 }
 
 .pqct img{
 
-    width: 600px;
-    height: 250px;
+    width: 700px;
+    height: 350px;
     transition: .5s;
 }
 
@@ -490,7 +490,7 @@ nav ul a:hover::after{
 
 .pqct p{
     color: white;
-    font-size: 14pt;
+    font-size: 18pt;
     font-weight: normal;
     line-height: 25px;
 
@@ -498,7 +498,7 @@ nav ul a:hover::after{
 .pqct h1{
     color: white;
     padding: 20px 0px;
-   
+    font-size: 24pt;
 }
 
 

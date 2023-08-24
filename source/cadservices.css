@@ -1,0 +1,344 @@
+@import url('https://ftons.googleapis.com/css2?font=Inter:wght@300;400;500;600;700&display=swap'); 
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    
+
+
+}
+
+*::selection{
+
+    background-color: rgb(50, 194, 237);
+    color: white;
+}
+
+
+body{
+
+    background-color: #dddcdc;
+    overflow-x: hidden;
+}
+
+
+.whatsapp-link {
+    
+
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 70px;
+    right: 25px;
+    background-color: rgb(31, 174, 231);
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+.up{
+    
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    opacity: 100%;
+
+   
+}
+
+
+.ct{
+    padding: 5px;
+    margin: 5px 10px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+
+}
+.ct img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.ct span{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.ct a{
+
+    color: white;
+    text-transform: lowercase;
+ 
+}
+
+header{
+
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+
+.container{
+
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2%;
+
+}
+
+nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin: 40px 0px;
+    
+}
+
+nav ul{
+
+    display: flex;
+    align-items: center;
+
+
+}
+
+nav ul a{
+
+    color: rgb(23, 83, 235);
+    margin: 0 25px;
+    font-size: 20px;
+    display: block;
+    font-weight: 550;
+
+}
+
+nav img{
+    width: 100px;
+}
+
+/*
+nav ul a:not(.btn):after{
+
+    content: "";
+    background-color:  #df2f10;;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 4px auto;
+    transition: .4s;
+
+}
+
+nav ul a:hover::after{
+
+    width: 100%;
+    
+}*/
+
+
+
+.banner{
+
+    padding: 154px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.banner .banner-text{
+
+    text-align: center;
+    margin: 10px 80px;
+    padding: 150px 90px;
+
+}
+
+.banner .banner-text h1{
+    color: white;
+    font-size: 70px;
+
+}
+
+.banner .banner-text p{
+
+    color: rgb(255, 255, 255);
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+.banner .banner-text a{
+
+    font-size: 25px;
+    margin-top: 50px;
+
+
+}
+
+
+
+.btn{
+
+    background-color: rgb(31, 174, 231);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: .3s;
+    animation: animate-outline 1s ease-out infinite;
+}
+
+
+
+.btn:hover{
+
+    background-color: #4f9cf9;
+    
+
+}
+
+
+
+
+.idea{
+
+    width: 100%;
+    height: 300px;
+    padding: 50px;
+    background-color: #064aa9d9;
+    text-align: center;
+}
+
+.idea h1{
+    
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.idea a {
+
+    padding: 18px ;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    background-color: rgb(31, 174, 231);
+     
+}
+
+@keyframes animate-outline{
+
+    from{
+        outline: 0px solid  rgba(25, 167, 238, 0.918);
+
+    }
+
+    to {
+        outline: 10px solid  rgba(36, 122, 234, 0.255);
+
+    }
+}
+
+
+.divdown{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items:stretch;
+    padding: 100px;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(31, 174, 231);
+    text-align:start;
+
+}
+
+
+
+.divdown h3{
+    
+    color: rgb(255, 255, 255);
+    padding: 15px 0px;
+    margin-bottom: 10px;
+
+}
+
+.divdown li{
+    margin-bottom: 10px;
+}
+
+.divdown ul li a{
+    
+    color: rgb(37, 37, 37);
+    font-size: 14pt;
+    transition: .3s;
+    
+}
+
+.divdown  ul li a:hover{
+    color: rgb(255, 255, 255);
+    
+}
+
+
+footer .cright{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1b1b;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+}
+
+
+ #subirTopo {
+    text-decoration: none;
+    bottom: 5px;
+    left: 2px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 14pt;
+    font-weight: 600;
+    position: fixed;
+
+}
+    
