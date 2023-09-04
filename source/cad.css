@@ -24,7 +24,7 @@
 
 body{
 
-    background-color: #dddcdc;
+    background-color: #dddbdb;
     overflow-x: hidden;
 }
 
@@ -37,7 +37,7 @@ body{
     height: 60px;
     bottom: 70px;
     right: 25px;
-    background-color: rgb(31, 174, 231);
+    background-color: rgb(44, 231, 31);
     color: #fff;
     border-radius: 50px;
     text-align: center;
@@ -102,7 +102,7 @@ header{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-
+    height: 1200px;
 
 }
 
@@ -134,7 +134,7 @@ nav ul{
 
 nav ul a{
 
-    color: rgb(23, 83, 235);
+    color: rgb(255, 255, 255);
     margin: 0 25px;
     text-transform: uppercase;
     font-size: 20px;
@@ -147,16 +147,15 @@ nav img{
     width: 100px;
 }
 
-/*
 nav ul a:not(.btn):after{
 
     content: "";
-    background-color:  #df2f10;;
+    background-color:  #ffffff;;
     height: 3px;
     width: 0%;
     display: block;
     margin: 4px auto;
-    transition: .4s;
+    transition: .5s;
 
 }
 
@@ -164,46 +163,48 @@ nav ul a:hover::after{
 
     width: 100%;
     
-}*/
+}
 
 
 
 .banner{
 
-    padding: 154px 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 150px 100px;
 }
 
 
 .banner .banner-text{
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 10px 80px;
-    padding: 150px 90px;
+    font-weight: bold;
+    padding: 100px 90px;
+    gap: 50px;
+    color: rgb(255, 255, 255);
 }
 
 .banner .banner-text h1{
-    color: white;
+    
     font-size: 70px;
-
 }
+
 
 .banner .banner-text p{
 
-    color: white;
-    margin: 20px 0;
     font-size: 25px;
-    font-weight: 500;
 
 }
 
 .banner .banner-text a{
 
     font-size: 25px;
-    margin-top: 50px;
-
-
+   
 }
 
 
@@ -231,7 +232,7 @@ nav ul a:hover::after{
 
 
 .objectivo{
-    background-color: #dddcdc;
+
     width: 100%;
     height: 600px;
     padding: 100px;
@@ -401,7 +402,6 @@ nav ul a:hover::after{
     width: 100%;
     margin: 100px 0px;
     padding: 200px 100px;
-    background-color: #dddcdc;
     
 }
 
@@ -469,7 +469,7 @@ nav ul a:hover::after{
     height: 500px;
     background-color: rgb(31, 174, 231);
     color: white;
-
+    margin-bottom: 10px;
 
 
 }
@@ -491,7 +491,6 @@ nav ul a:hover::after{
 .pqct p{
     color: white;
     font-size: 18pt;
-    font-weight: normal;
     line-height: 25px;
 
 }
@@ -499,6 +498,7 @@ nav ul a:hover::after{
     color: white;
     padding: 20px 0px;
     font-size: 24pt;
+    font-weight: bold;
 }
 
 
@@ -508,24 +508,26 @@ nav ul a:hover::after{
     width: 100%;
     height: 300px;
     padding: 50px;
-    background-color: #064aa9d9;
     text-align: center;
+    background-color: #b4b2b2e0;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 .idea h1{
     
     color: rgb(255, 255, 255);
     font-size: 60px;
-    margin-bottom: 50px;
 }
 
 .idea a {
 
     padding: 18px ;
     border-radius: 5px;
-    color: white;
-    font-weight: 700;
-    background-color: rgb(31, 174, 231);
      
 }
 
@@ -551,16 +553,15 @@ nav ul a:hover::after{
     padding: 100px;
     width: 100%;
     height: 500px;
-    background-color: rgb(31, 174, 231);
     text-align:start;
-
+    
 }
 
 
 
 .divdown h3{
     
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 15px 0px;
     margin-bottom: 10px;
 
@@ -575,11 +576,6 @@ nav ul a:hover::after{
     color: rgb(37, 37, 37);
     font-size: 14pt;
     transition: .3s;
-    
-}
-
-.divdown  ul li a:hover{
-    color: rgb(255, 255, 255);
     
 }
 
